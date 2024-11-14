@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="dica"
+            type="br.com.fiap.joseVictor_rm95663.EcoTip" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tituloDica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{dica.title}"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/descricaoDica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{dica.description}"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</layout>
